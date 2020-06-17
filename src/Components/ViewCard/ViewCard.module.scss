@@ -1,0 +1,58 @@
+@import "../../SCSS//Variables";
+@import "../../SCSS/Mixins";
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 10px rgb(129, 128, 128);
+
+  @include Desktop() {
+    width: 50%;
+  }
+
+  .headContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: baseline;
+
+    .headDueDate {
+      color: red;
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+  .close {
+    margin-left: auto;
+  }
+  .head {
+    text-align: left;
+    font-size: $subhead2;
+    margin-right: 20px;
+  }
+  .label {
+    font-size: 18px;
+    font-weight: bold;
+  }
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(156, 156, 156, 0.5);
+}
+.icons {
+  margin-right: auto;
+
+  .icon {
+    margin-right: 12px;
+    color: gray;
+  }
+}

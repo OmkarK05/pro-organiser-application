@@ -1,0 +1,214 @@
+@media (min-width: 500px) {
+  .Lnavbar {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.login,
+.signup {
+  color: #4c2fff;
+  padding: 8px;
+  margin: 5px;
+  font-size: 16px;
+}
+
+@media (min-width: 500px) {
+  .login,
+  .signup {
+    color: #4c2fff;
+    margin: 0px 15px;
+    padding: 8px;
+    margin: 5px 10px;
+  }
+}
+
+.signup {
+  margin-right: 0px;
+  background-color: #4c2fff;
+  border-radius: 5px;
+}
+
+@media (min-width: 500px) {
+  .signup {
+    margin-right: 100px;
+  }
+}
+
+.login:hover,
+.signup:hover {
+  color: #170b69;
+  border-bottom: 2px solid #d9e4ff;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.navbar {
+  -webkit-box-shadow: 1px 1px 15px #bbb1b1;
+          box-shadow: 1px 1px 15px #bbb1b1;
+  background-color: #563ceb;
+  width: 100%;
+}
+
+.navbar .logo {
+  color: #6ffcfc;
+  margin-left: 0px;
+  font-size: 18px;
+}
+
+@media (min-width: 500px) {
+  .navbar .logo {
+    margin-left: 100px;
+    font-size: 22px;
+  }
+}
+
+.Container {
+  width: auto;
+}
+
+@media (min-width: 500px) {
+  .Container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+.landingPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+@media (min-width: 500px) {
+  .landingPage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "LeftSide RightSide";
+    grid-gap: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .LeftSide {
+    grid-area: LeftSide;
+    width: 100%;
+    margin-left: 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.LeftSide .mainText {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 26px;
+  letter-spacing: 1px;
+}
+
+@media (min-width: 500px) {
+  .LeftSide .mainText {
+    font-size: 32px;
+    width: 100%;
+    padding-top: 50px;
+  }
+}
+
+.LeftSide .ListContainer {
+  margin-bottom: 30px;
+}
+
+@media (min-width: 500px) {
+  .LeftSide .ListContainer {
+    margin-bottom: 40px;
+  }
+}
+
+.LeftSide .ListContainer .listItems {
+  list-style-type: none;
+  -webkit-transform: translateX(-9%);
+          transform: translateX(-9%);
+  font-size: 18px;
+  line-height: 36px;
+}
+
+@media (min-width: 500px) {
+  .LeftSide .ListContainer .listItems {
+    -webkit-transform: translateX(-9%);
+            transform: translateX(-9%);
+    font-size: 22px;
+    letter-spacing: 1px;
+    margin: 10px 10px 0px 0px;
+  }
+}
+
+.LeftSide .SignupButtonContainer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 500px) {
+  .LeftSide .SignupButtonContainer {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+}
+
+.LeftSide .SignupButtonContainer .SignupButton {
+  width: 80%;
+  background-color: #4c2fff;
+}
+
+@media (min-width: 500px) {
+  .LeftSide .SignupButtonContainer .SignupButton {
+    width: 200px;
+    height: 50px;
+  }
+}
+
+.ImageContainer {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .ImageContainer {
+    grid-area: RightSide;
+    width: 100%;
+  }
+}
+
+.ImageContainer .image {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .ImageContainer .image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=LandingPage.module.css.map */

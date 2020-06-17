@@ -1,0 +1,16 @@
+export const SET_CARD = "SET_CARD";
+export const SET_COLUMN = "ADD_COLUMN";
+export const VIEW_CARD = "VIEW_CARD";
+export const GET_DATA = "GET_DATA";
+export const SELECTED_BOARD_KEY = "SELECTED_BOARD_KEY";
+export const SELECTED_BOARD_VALUES = "SELECTED_BOARD_VALUES";
+export const COLUMN_KEY = "COLUMN_KEY";
+export const CARD_KEY = "CARD_KEY";
+export const GET_BOARD_COLUMN_DATA = "GET_BOARD_COLUMN_DATA";
+export const DELETE_COLUMN = "DELETE_COLUMN";
+export const DELETE_CARD = "DELETE_CARD";
+export const EDIT_CARD = "EDIT_CARD";
+export const DRAG_DROP = "DRAG_DROP";
+export const USER_AUTH = "USER_AUTH";
+export const USER_AUTH_ERROR = "USER_AUTH_ERROR";
+export const LOADER = "LOADER";

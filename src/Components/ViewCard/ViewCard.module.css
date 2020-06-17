@@ -1,0 +1,78 @@
+.modal {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 15px;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 90%;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 10px #818080;
+          box-shadow: 0px 0px 10px #818080;
+}
+
+@media (min-width: 500px) {
+  .modal {
+    width: 50%;
+  }
+}
+
+.modal .headContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+}
+
+.modal .headContainer .headDueDate {
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.modal .close {
+  margin-left: auto;
+}
+
+.modal .head {
+  text-align: left;
+  font-size: 1.8rem;
+  margin-right: 20px;
+}
+
+.modal .label {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(156, 156, 156, 0.5);
+}
+
+.icons {
+  margin-right: auto;
+}
+
+.icons .icon {
+  margin-right: 12px;
+  color: gray;
+}
+/*# sourceMappingURL=ViewCard.module.css.map */

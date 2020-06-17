@@ -1,0 +1,35 @@
+.Card {
+  width: 220px;
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-right: 15px;
+  background-color: #e9e9e9;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.icon {
+  margin: 0 auto;
+}
+
+.button {
+  margin: 15px 5px 0 0;
+}
+
+.cardTitle {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.boardName {
+  font-size: 26px;
+}
+/*# sourceMappingURL=Columns.module.css.map */

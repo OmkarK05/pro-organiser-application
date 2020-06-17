@@ -1,0 +1,53 @@
+.form {
+  width: 90%;
+  margin: 20px;
+  border: 2 px solid #505050;
+  padding-top: 20px;
+  padding-bottom: 80px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 10px;
+}
+
+@media (min-width: 500px) {
+  .form {
+    width: 40%;
+    margin: 0 auto;
+    border: 2 px solid #6d6d6d;
+    padding-top: 20px;
+    padding-bottom: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 10px;
+  }
+}
+
+.form .label {
+  float: left;
+}
+
+.form .createButton {
+  float: left;
+  margin-top: 10px;
+  background-color: #4164ff;
+  color: #fdfdfd;
+}
+
+.form .createButton:hover {
+  -webkit-box-shadow: 0px 0px 10px #adadad;
+          box-shadow: 0px 0px 10px #adadad;
+}
+
+.head {
+  font-size: 1.6rem;
+  padding-top: 15px;
+  text-align: center;
+  color: #0bbb8f;
+}
+
+@media (min-width: 500px) {
+  .head {
+    padding-top: 30px;
+  }
+}
+/*# sourceMappingURL=CreateBoardForm.module.css.map */

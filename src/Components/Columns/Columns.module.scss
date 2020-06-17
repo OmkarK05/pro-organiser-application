@@ -1,0 +1,28 @@
+@import "../../SCSS//Variables";
+@import "../../SCSS/Mixins";
+
+.Card {
+  width: 220px;
+  margin-bottom: 15px;
+  padding: 10px;
+  margin-right: 15px;
+  background-color: rgb(233, 233, 233);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+}
+.icon {
+  margin: 0 auto;
+}
+.button {
+  margin: 15px 5px 0 0;
+}
+
+.cardTitle {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+.boardName {
+  font-size: 26px;
+}

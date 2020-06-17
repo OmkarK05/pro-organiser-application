@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACL,YAAY,EAAE,IAAI;CAMnB;;AAPD,AAGE,MAHI,CAGJ,KAAK,CAAC;EACJ,YAAY,EAAE,GAAG;EACjB,KAAK,EAAE,IAAI;CACZ",
+    "sources": [
+        "EditDeleteIcons.module.scss"
+    ],
+    "names": [],
+    "file": "EditDeleteIcons.module.css"
+}

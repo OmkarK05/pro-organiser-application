@@ -1,0 +1,63 @@
+@import "../../SCSS//Variables";
+@import "../../SCSS/Mixins";
+.HomePage {
+  padding: 15px 15px;
+  width: auto;
+  height: 100vh;
+  @include Desktop() {
+    padding: 0 120px;
+  }
+}
+
+.button {
+  background-color: rgb(65, 100, 255);
+  color: rgb(253, 253, 253);
+  border: none;
+  box-shadow: 1px 2px 5px rgb(209, 209, 209);
+}
+.button :hover {
+  background: rgb(108, 76, 253);
+}
+.head {
+  font-size: $subhead2;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  color: rgb(11, 187, 143);
+}
+
+.boardsContainer {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+
+  @include Desktop() {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+  }
+
+  .boardCard {
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgb(3, 216, 187);
+    width: 100%;
+    height: 100px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+
+    @include Desktop() {
+      width: 250px;
+      height: 100px;
+      flex-direction: row;
+      margin: 0 0;
+      box-shadow: 0px 0px 10px rgb(207, 207, 207);
+    }
+
+    .boardName {
+      padding: 5px;
+      margin-top: 15px;
+    }
+  }
+}

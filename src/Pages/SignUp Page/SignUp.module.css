@@ -1,0 +1,146 @@
+@media (min-width: 500px) {
+  .container {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+.signupPage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 15px;
+}
+
+@media (min-width: 500px) {
+  .signupPage {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 50% 50%;
+        grid-template-columns: 50% 50%;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+        grid-template-areas: "LeftSide RightSide";
+    grid-gap: 0;
+  }
+}
+
+@media (min-width: 500px) {
+  .formGroup {
+    width: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 0 auto;
+  }
+}
+
+.formGroup .Emailform,
+.formGroup .Usernameform {
+  width: 100%;
+}
+
+.formGroup .PasswordForm {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .formGroup .PasswordForm {
+    width: 48%;
+    margin-right: 4%;
+  }
+}
+
+.formGroup .RewritePasswordForm {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .formGroup .RewritePasswordForm {
+    width: 48%;
+  }
+}
+
+.formGroup .button {
+  width: 150px;
+  height: 50px;
+  margin: 15px 15px 0 0;
+  background-color: #4164ff;
+  color: #fdfdfd;
+}
+
+.formGroup .button:hover {
+  background-color: #4154ff;
+  -webkit-box-shadow: 0px 2px 10px #9d9d9e;
+          box-shadow: 0px 2px 10px #9d9d9e;
+}
+
+.formGroup .already {
+  margin-top: 0px;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .formContainer {
+    grid-area: LeftSide;
+    background-color: #fbfbfb;
+    -webkit-box-shadow: 0px 0px 15px #aaaaaa;
+            box-shadow: 0px 0px 15px #aaaaaa;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
+    width: auto;
+    padding: 20px 0px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+}
+
+.formContainer .headContainer {
+  text-align: center;
+}
+
+.formContainer .text {
+  font-size: 28px;
+  font-weight: bold;
+  color: #19192e;
+  padding-bottom: 0px;
+  color: #f06c88;
+}
+
+.ImageContainer {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .ImageContainer {
+    grid-area: RightSide;
+    width: 100%;
+  }
+}
+
+.ImageContainer .image {
+  width: 100%;
+}
+
+@media (min-width: 500px) {
+  .ImageContainer .image {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
+/*# sourceMappingURL=SignUp.module.css.map */

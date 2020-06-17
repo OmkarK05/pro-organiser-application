@@ -1,0 +1,146 @@
+@import "../../SCSS/Mixins";
+
+.Lnavbar {
+  @include Desktop() {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+.login,
+.signup {
+  color: #4c2fff;
+  padding: 8px;
+  margin: 5px;
+  font-size: 16px;
+  @include Desktop() {
+    color: #4c2fff;
+    margin: 0px 15px;
+    padding: 8px;
+    margin: 5px 10px;
+  }
+}
+.signup {
+  margin-right: 0px;
+  background-color: #4c2fff;
+  border-radius: 5px;
+  @include Desktop() {
+    margin-right: 100px;
+  }
+}
+
+.login:hover,
+.signup:hover {
+  color: #170b69;
+  border-bottom: 2px solid rgb(217, 228, 255);
+  transition-duration: 0.2s;
+}
+.navbar {
+  box-shadow: 1px 1px 15px rgb(187, 177, 177);
+  background-color: rgb(86, 60, 235);
+  width: 100%;
+  .logo {
+    color: #6ffcfc;
+    margin-left: 0px;
+    font-size: 18px;
+    @include Desktop() {
+      margin-left: 100px;
+      font-size: 22px;
+    }
+  }
+}
+
+.Container {
+  width: auto;
+  @include Desktop() {
+    width: 1024px;
+    margin: 0 auto;
+  }
+}
+
+.landingPage {
+  display: flex;
+  flex-direction: column;
+  margin: 15px;
+  @include Desktop() {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: "LeftSide RightSide";
+    grid-gap: 0;
+  }
+}
+.LeftSide {
+  @include Desktop() {
+    grid-area: LeftSide;
+    width: 100%;
+    margin-left: 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mainText {
+    margin-top: 20px;
+    width: 100%;
+    font-size: 26px;
+    letter-spacing: 1px;
+
+    @include Desktop() {
+      font-size: 32px;
+      width: 100%;
+      padding-top: 50px;
+    }
+  }
+  .ListContainer {
+    margin-bottom: 30px;
+    @include Desktop() {
+      margin-bottom: 40px;
+    }
+    .listItems {
+      list-style-type: none;
+      transform: translateX(-9%);
+      font-size: 18px;
+      line-height: 18px * 2;
+      @include Desktop() {
+        transform: translateX(-9%);
+        font-size: 22px;
+        letter-spacing: 1px;
+        margin: 10px 10px 0px 0px;
+      }
+    }
+  }
+
+  .SignupButtonContainer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @include Desktop() {
+      justify-content: left;
+    }
+    .SignupButton {
+      width: 80%;
+      background-color: #4c2fff;
+      @include Desktop() {
+        width: 200px;
+        height: 50px;
+      }
+    }
+  }
+}
+
+.ImageContainer {
+  width: 100%;
+  @include Desktop() {
+    grid-area: RightSide;
+    width: 100%;
+  }
+  .image {
+    width: 100%;
+
+    @include Desktop() {
+      width: 100%;
+      padding: 0;
+      margin: 0;
+    }
+  }
+}

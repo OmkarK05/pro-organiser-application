@@ -1,0 +1,59 @@
+@import "../../SCSS//Variables";
+@import "../../SCSS/Mixins";
+
+.container {
+  max-height: 300px;
+  overflow: auto;
+}
+.card {
+  padding: 5px;
+  background-color: #ffffff;
+  margin: 0px;
+  border: 1px solid rgb(175, 175, 175);
+}
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: rgb(101, 116, 255);
+}
+
+.footer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+
+  .circle {
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 1rem;
+    background-color: rgb(117, 117, 117);
+    padding: 3px;
+    margin-right: 2px;
+  }
+
+  .name {
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+}
+.icons {
+  margin-right: auto;
+
+  .icon {
+    margin-right: 5px;
+    color: gray;
+  }
+}

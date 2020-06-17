@@ -1,0 +1,79 @@
+.container {
+  max-height: 300px;
+  overflow: auto;
+}
+
+.card {
+  padding: 5px;
+  background-color: #ffffff;
+  margin: 0px;
+  border: 1px solid #afafaf;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.button {
+  width: 100%;
+  margin-top: 10px;
+  background-color: #6574ff;
+}
+
+.footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.footer .circle {
+  width: 25px;
+  height: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 1rem;
+  background-color: #757575;
+  padding: 3px;
+  margin-right: 2px;
+}
+
+.footer .name {
+  font-size: 14px;
+  color: white;
+}
+
+.icons {
+  margin-right: auto;
+}
+
+.icons .icon {
+  margin-right: 5px;
+  color: gray;
+}
+/*# sourceMappingURL=BoardCards.module.css.map */

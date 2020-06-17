@@ -1,0 +1,109 @@
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  max-width: 768px;
+  overflow: auto;
+}
+
+.columnContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.board {
+  margin: 1rem 1rem;
+  overflow: auto;
+}
+
+@media (min-width: 500px) {
+  .board {
+    margin: 1rem 120px;
+    overflow: auto;
+  }
+}
+
+.board .boardHead {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: -webkit-sticky;
+  position: sticky;
+  width: auto;
+  color: #0bbb8f;
+  position: sticky;
+  width: auto;
+}
+
+@media (min-width: 500px) {
+  .board .boardHead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    position: -webkit-sticky;
+    position: sticky;
+    width: auto;
+  }
+}
+
+.board .boardHead .Button {
+  margin-bottom: 15px;
+}
+
+.board .Card {
+  margin-bottom: 15px;
+  padding: 10px;
+  width: 220px;
+}
+
+.board .icon {
+  margin: 0 auto;
+}
+
+.board .button {
+  margin: 15px 5px 0 0;
+}
+
+.board .cardTitle {
+  font-size: 22px;
+  letter-spacing: 1px;
+}
+
+.board .boardName {
+  font-size: 26px;
+  position: -webkit-sticky;
+  position: sticky;
+}
+/*# sourceMappingURL=Board.module.css.map */
