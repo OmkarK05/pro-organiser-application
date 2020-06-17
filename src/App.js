@@ -9,6 +9,7 @@ import {
   Link,
   useHistory,
   Redirect,
+  HashRouter,
 } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -62,7 +63,7 @@ const App = () => {
 
   return (
     <div>
-      <Router basename="/pro-organiser">
+      <HashRouter basename="/">
         <OrganiserContext.Provider value={{ state, dispatch }}>
           <ToastContainer />
 
@@ -89,7 +90,7 @@ const App = () => {
             )}
           </Switch>
         </OrganiserContext.Provider>
-      </Router>
+      </HashRouter>
     </div>
   );
 };
