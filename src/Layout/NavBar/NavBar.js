@@ -21,7 +21,7 @@ function NavBar() {
         <NavbarBrand>
           {state.setUser !== null && state.setUser !== undefined ? (
             <NavLink
-              to="/boards"
+              to={`/${state.setUser.email}/boards`}
               className="text-white"
               style={{ textDecoration: "none" }}
             >
@@ -41,7 +41,7 @@ function NavBar() {
           <NavItem className={styles.home}>
             {state.setUser !== null && state.setUser !== undefined ? (
               <NavLink
-                to="/boards"
+                to={`/${state.setUser.email}/boards`}
                 className="text-white"
                 style={{ textDecoration: "none" }}
                 activeClassName={styles.active}
@@ -62,7 +62,7 @@ function NavBar() {
           <NavItem className={styles.createBoard}>
             {state.setUser !== null && state.setUser !== undefined ? (
               <NavLink
-                to="/createBoard"
+                to={`/${state.setUser.email}/createBoard`}
                 className="text-white"
                 activeStyle={{ color: "red" }}
                 style={{ textDecoration: "none" }}
