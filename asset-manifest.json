@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.ac4a0987.chunk.css",
-    "main.js": "/static/js/main.5c899347.chunk.js",
-    "main.js.map": "/static/js/main.5c899347.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.2069ec65.js",
-    "runtime-main.js.map": "/static/js/runtime-main.2069ec65.js.map",
-    "static/css/2.37865b2a.chunk.css": "/static/css/2.37865b2a.chunk.css",
-    "static/js/2.11d2f4b7.chunk.js": "/static/js/2.11d2f4b7.chunk.js",
-    "static/js/2.11d2f4b7.chunk.js.map": "/static/js/2.11d2f4b7.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.20a0264b0cf13fe4796812cc55c5e748.js": "/precache-manifest.20a0264b0cf13fe4796812cc55c5e748.js",
-    "service-worker.js": "/service-worker.js",
-    "static/css/2.37865b2a.chunk.css.map": "/static/css/2.37865b2a.chunk.css.map",
-    "static/css/main.ac4a0987.chunk.css.map": "/static/css/main.ac4a0987.chunk.css.map",
-    "static/js/2.11d2f4b7.chunk.js.LICENSE.txt": "/static/js/2.11d2f4b7.chunk.js.LICENSE.txt"
+    "main.css": "/pro-organiser-application/static/css/main.ac4a0987.chunk.css",
+    "main.js": "/pro-organiser-application/static/js/main.8d825e18.chunk.js",
+    "main.js.map": "/pro-organiser-application/static/js/main.8d825e18.chunk.js.map",
+    "runtime-main.js": "/pro-organiser-application/static/js/runtime-main.5b77e02f.js",
+    "runtime-main.js.map": "/pro-organiser-application/static/js/runtime-main.5b77e02f.js.map",
+    "static/css/2.37865b2a.chunk.css": "/pro-organiser-application/static/css/2.37865b2a.chunk.css",
+    "static/js/2.7b8db3a1.chunk.js": "/pro-organiser-application/static/js/2.7b8db3a1.chunk.js",
+    "static/js/2.7b8db3a1.chunk.js.map": "/pro-organiser-application/static/js/2.7b8db3a1.chunk.js.map",
+    "index.html": "/pro-organiser-application/index.html",
+    "precache-manifest.2d6ca08d8ced5c18d06cc173ed767c40.js": "/pro-organiser-application/precache-manifest.2d6ca08d8ced5c18d06cc173ed767c40.js",
+    "service-worker.js": "/pro-organiser-application/service-worker.js",
+    "static/css/2.37865b2a.chunk.css.map": "/pro-organiser-application/static/css/2.37865b2a.chunk.css.map",
+    "static/css/main.ac4a0987.chunk.css.map": "/pro-organiser-application/static/css/main.ac4a0987.chunk.css.map",
+    "static/js/2.7b8db3a1.chunk.js.LICENSE.txt": "/pro-organiser-application/static/js/2.7b8db3a1.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2069ec65.js",
+    "static/js/runtime-main.5b77e02f.js",
     "static/css/2.37865b2a.chunk.css",
-    "static/js/2.11d2f4b7.chunk.js",
+    "static/js/2.7b8db3a1.chunk.js",
     "static/css/main.ac4a0987.chunk.css",
-    "static/js/main.5c899347.chunk.js"
+    "static/js/main.8d825e18.chunk.js"
   ]
 }
