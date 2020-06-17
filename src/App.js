@@ -62,7 +62,7 @@ const App = () => {
 
   return (
     <div>
-      <Router>
+      <Router basename="/pro-organiser">
         <OrganiserContext.Provider value={{ state, dispatch }}>
           <ToastContainer />
 
