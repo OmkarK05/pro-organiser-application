@@ -1,5 +1,6 @@
 {
   "name": "pro-organiser-application",
+  "homepage": "https://omkarkesarkhane.github.io/pro-organiser-application",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -27,8 +28,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "homepage": "https://omkarkesarkhane.github.io/pro-organiser-application"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": "react-app"
