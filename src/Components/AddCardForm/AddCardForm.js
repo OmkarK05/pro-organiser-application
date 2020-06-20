@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import styles from "./AddCardForm.module.css";
 import Modal from "react-modal";
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
@@ -17,8 +17,6 @@ const AddCardForm = ({ columnKey }) => {
 
   const { state, dispatch } = useContext(OrganiserContext);
   const { editCard, setCardValue, setCardKey } = state;
-
-  console.log(editCard, state.setUser.uid, state.selectedBoardKey, columnKey);
 
   const createMembersArray = (members) => {
     let membersString = members;
@@ -130,13 +128,12 @@ const AddCardForm = ({ columnKey }) => {
 
   useEffect(() => {
     if (editCard === true) {
-      console.log("changed");
       setTaskTitle(setCardValue.taskTitle);
       setDescription(setCardValue.description);
       setMembers(setCardValue.members);
       setDueDate(setCardValue.dueDate);
     }
-  }, [setCardValue]);
+  }, [setCardValue, editCard]);
 
   const resetForm = () => {
     setTaskTitle("");

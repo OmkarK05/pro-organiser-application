@@ -1,11 +1,5 @@
-import React, {
-  useState,
-  useRef,
-  useEffect,
-  Fragment,
-  useContext,
-} from "react";
-import { Form, FormGroup, FormText, Label, Input, Button } from "reactstrap";
+import React, { useState, Fragment, useContext } from "react";
+import { Form, FormGroup, Label, Input, Button } from "reactstrap";
 import { v4 } from "uuid";
 import styles from "./CreateBoardForm.module.css";
 import firebase from "firebase/app";
@@ -80,7 +74,6 @@ const CreateBoardForm = () => {
               <Input
                 type="text-area"
                 id="team"
-                id="NameofBoard"
                 value={teamMembers}
                 placeholder="NN : Nikhil Nair"
                 onChange={(e) => setTeamMembers(e.target.value)}

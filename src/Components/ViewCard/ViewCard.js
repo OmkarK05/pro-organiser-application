@@ -1,13 +1,11 @@
-import React, { useState, useRef, useEffect, useContext } from "react";
+import React, { useContext } from "react";
 import styles from "./ViewCard.module.css";
 import Modal from "react-modal";
-import { Form, FormGroup, Input, Label, Button } from "reactstrap";
+import { Form, FormGroup, Label } from "reactstrap";
 import { FaTimesCircle } from "react-icons/fa";
-import { MdDelete, MdEdit } from "react-icons/md";
 import EditDeleteIcons from "../EditDeleteIcons/EditDeleteIcons";
 import { OrganiserContext } from "../../Context/Context";
 import { VIEW_CARD } from "../../Context/ActionTypes";
-import firebase from "firebase/app";
 
 const ViewCard = ({ columnKey }) => {
   const { state, dispatch } = useContext(OrganiserContext);

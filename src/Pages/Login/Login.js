@@ -1,8 +1,8 @@
 import React, { Fragment, useState, useContext } from "react";
 import styles from "./Login.module.css";
 import { Form, FormGroup, Button, Label, Input } from "reactstrap";
-import { Link, useHistory } from "react-router-dom";
-import firebase, { auth } from "firebase/app";
+import { Link } from "react-router-dom";
+import firebase from "firebase/app";
 import { OrganiserContext } from "../../Context/Context";
 import { USER_AUTH, USER_AUTH_ERROR, LOADER } from "../../Context/ActionTypes";
 import NavBar from "../../Layout/NavBar/NavBar";
@@ -12,8 +12,6 @@ const Login = () => {
   const [email, setEmail] = useState();
   const [password, setPassword] = useState();
   const [showpassword, setShowpassword] = useState(false);
-
-  const history = useHistory();
 
   const { state, dispatch } = useContext(OrganiserContext);
 

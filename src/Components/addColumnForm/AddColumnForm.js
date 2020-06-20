@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect, useContext } from "react";
+import React, { useState, useContext } from "react";
 import styles from "./AddColumnForm.module.css";
 import Modal from "react-modal";
 import { Form, FormGroup, Input, Label, Button } from "reactstrap";
@@ -8,7 +8,7 @@ import { SET_COLUMN } from "../../Context/ActionTypes";
 import firebase from "firebase/app";
 import { v4 } from "uuid";
 
-const AddColumnForm = (props) => {
+const AddColumnForm = () => {
   const [taskTitle, setTaskTitle] = useState();
 
   const { state, dispatch } = useContext(OrganiserContext);
@@ -63,7 +63,6 @@ const AddColumnForm = (props) => {
           <Input
             type="text"
             id="column_name"
-            id="taskTitle"
             value={taskTitle}
             placeholder=""
             onChange={(e) => setTaskTitle(e.target.value)}
@@ -74,7 +73,6 @@ const AddColumnForm = (props) => {
           id="CreateColumn"
           onChange={(e) => setTaskTitle(e.target.value)}
           size="md"
-          type="submit"
           className={styles.createButton}
         >
           Add Task

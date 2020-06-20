@@ -1,17 +1,11 @@
-import React, { useState, useContext, useEffect, Fragment } from "react";
-import { Col, Card, CardTitle, CardText, Row, Button, Modal } from "reactstrap";
+import React, { useContext, useEffect, Fragment } from "react";
+import { Card, CardTitle, Button } from "reactstrap";
 import styles from "./Board.module.css";
-import BoardCards from "../BoardCard./BoardCards";
-import AddCardForm from "../AddCardForm/AddCardForm";
+
 import { AiOutlinePlusCircle } from "react-icons/ai";
-import { MdDelete } from "react-icons/md";
 import AddColumnForm from "../addColumnForm/AddColumnForm";
 import { OrganiserContext } from "../../Context/Context";
-import {
-  SET_COLUMN,
-  SELECTED_BOARD_VALUES,
-  GET_BOARD_COLUMN_DATA,
-} from "../../Context/ActionTypes";
+import { SET_COLUMN, GET_BOARD_COLUMN_DATA } from "../../Context/ActionTypes";
 import firebase from "firebase/app";
 import Columns from "../Columns/Columns";
 import NavBar from "../../Layout/NavBar/NavBar";
@@ -20,7 +14,6 @@ import Relogin from "../../Pages/Relogin/Relogin";
 
 const Board = () => {
   const { state, dispatch } = useContext(OrganiserContext);
-  const { selectedBoardValue } = state;
 
   const history = useHistory();
 
@@ -46,7 +39,7 @@ const Board = () => {
   };
   useEffect(() => {
     getBoardData();
-  }, []);
+  });
 
   const deleteHandler = () => {
     console.log("click");

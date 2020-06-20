@@ -1,20 +1,15 @@
-import React, { useState, Fragment, useContext, useEffect } from "react";
-import { Col, Row, Card, CardTitle, Button } from "reactstrap";
+import React, { useState, useContext } from "react";
+import { Card, CardTitle, Button } from "reactstrap";
 import styles from "./BoardCards.module.css";
-import { v4 } from "uuid";
-import AddColumnForm from "../addColumnForm/AddColumnForm";
 import ViewCard from "../ViewCard/ViewCard";
 import AddCardForm from "../AddCardForm/AddCardForm";
-import EditDeleteIcons from "../EditDeleteIcons/EditDeleteIcons";
 import { OrganiserContext } from "../../Context/Context";
 import {
   VIEW_CARD,
   SET_CARD,
-  COLUMN_KEY,
   EDIT_CARD,
   DRAG_DROP,
 } from "../../Context/ActionTypes";
-import Ccard from "../Card/Ccard";
 import { MdViewList, MdEdit, MdDelete } from "react-icons/md";
 import firebase from "firebase/app";
 import { toast } from "react-toastify";

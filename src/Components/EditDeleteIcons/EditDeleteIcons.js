@@ -3,7 +3,7 @@ import { MdDelete, MdEdit } from "react-icons/md";
 import styles from "./EditDeleteIcons.module.css";
 import AddCardForm from "../AddCardForm/AddCardForm";
 import { OrganiserContext } from "../../Context/Context";
-import { SET_CARD, VIEW_CARD, EDIT_CARD } from "../../Context/ActionTypes";
+import { VIEW_CARD, EDIT_CARD } from "../../Context/ActionTypes";
 import firebase from "firebase/app";
 
 const EditDeleteIcons = ({ cardKey, columnKey, cardValue }) => {

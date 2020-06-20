@@ -1,22 +1,21 @@
-import React, { useState, useContext, useEffect } from "react";
-import { Col, Card, CardTitle, CardText, Row, Button, Modal } from "reactstrap";
+import React, { useContext } from "react";
+import { Card, CardTitle } from "reactstrap";
 import styles from "./Columns.module.css";
 import BoardCards from "../BoardCard./BoardCards";
 import { MdDelete } from "react-icons/md";
 import { OrganiserContext } from "../../Context/Context";
 
 import firebase from "firebase/app";
-import { DRAG_DROP } from "../../Context/ActionTypes";
 
 const Columns = ({ columnKey, value }) => {
-  const { state, dispatch } = useContext(OrganiserContext);
+  const { state } = useContext(OrganiserContext);
   const { dragggedColumnKey, draggesCardData, selectedBoardKey } = state;
 
   const deleteColumn = () => {
     firebase
       .database()
       .ref(
-        `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${columnKey}`
+        `/users/${state.setUser.uid}/boards/${selectedBoardKey}/columns/${columnKey}`
       )
       .remove();
   };

@@ -2,7 +2,6 @@ import React, { useContext } from "react";
 import { Navbar, NavbarBrand, NavItem, Nav } from "reactstrap";
 import styles from "./NavBar.module.css";
 import { NavLink } from "react-router-dom";
-import { IoLogoUsd } from "react-icons/io";
 import { OrganiserContext } from "../../Context/Context";
 import { USER_AUTH } from "../../Context/ActionTypes";
 

@@ -13,8 +13,6 @@ import firebase from "firebase/app";
 import Relogin from "../Relogin/Relogin";
 import Loader from "../../Components/Loader/Loader";
 
-import { FaExternalLinkSquareAlt } from "react-icons/fa";
-
 function HomePage(props) {
   const { state, dispatch } = useContext(OrganiserContext);
   console.log(props);
@@ -58,11 +56,7 @@ function HomePage(props) {
 
   useEffect(() => {
     getData();
-  }, []);
-
-  const reLogin = () => {
-    history.push("/login");
-  };
+  });
 
   if (state.loader === true) {
     return (

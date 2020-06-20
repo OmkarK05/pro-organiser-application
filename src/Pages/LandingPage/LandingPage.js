@@ -1,15 +1,7 @@
 import React, { Fragment } from "react";
 import styles from "./LandingPage.module.css";
-import {
-  Button,
-  Row,
-  Col,
-  Nav,
-  Navbar,
-  NavItem,
-  NavbarBrand,
-} from "reactstrap";
-import { Link, useHistory } from "react-router-dom";
+import { Button } from "reactstrap";
+import { useHistory } from "react-router-dom";
 import { IoMdCheckmarkCircle } from "react-icons/io";
 import NavBar from "../../Layout/NavBar/NavBar";
 
