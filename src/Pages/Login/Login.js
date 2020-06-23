@@ -77,13 +77,13 @@ const Login = () => {
               className={styles.formGroup}
             >
               <FormGroup className={styles.Emailform}>
-                <Label for="exampleEmail" className="mr-sm-2">
+                <Label for="name" className="mr-sm-2">
                   Email
                 </Label>
                 <Input
                   type="email"
                   name="email"
-                  id="exampleEmail"
+                  id="name"
                   placeholder="something@idk.cool"
                   style={{ backgroundColor: "#d1d1d1" }}
                   onChange={(e) => setEmail(e.target.value)}
@@ -91,13 +91,13 @@ const Login = () => {
               </FormGroup>
 
               <FormGroup className={styles.RewritePasswordForm}>
-                <Label for="examplePassword" className="mr-sm-2">
+                <Label for="password" className="mr-sm-2">
                   Password
                 </Label>
                 <Input
                   type={showpassword === true ? "text" : "password"}
                   name="password"
-                  id="examplePassword"
+                  id="password"
                   placeholder=""
                   // invalid={state.error !== null ? "true" : "false"}
                   style={{ backgroundColor: "#d1d1d1" }}
