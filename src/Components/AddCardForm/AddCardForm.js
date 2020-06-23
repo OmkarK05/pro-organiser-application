@@ -178,7 +178,7 @@ const AddCardForm = ({ columnKey }) => {
             type="text"
             id="title"
             value={taskTitle}
-            placeholder=""
+            placeholder="e.g Add a new icon"
             onChange={(e) => setTaskTitle(e.target.value)}
           ></Input>
         </FormGroup>
@@ -232,7 +232,7 @@ const AddCardForm = ({ columnKey }) => {
           <Input
             type="text"
             id="description"
-            placeholder=""
+            placeholder="Add your description here"
             value={description}
             onChange={(e) => setDescription(e.target.value)}
           ></Input>
@@ -252,7 +252,7 @@ const AddCardForm = ({ columnKey }) => {
           type="submit"
           className={styles.createButton}
         >
-          {state.editCard === true ? "Save Changes" : "Create Board"}
+          {state.editCard === true ? "Save Changes" : "Add Card"}
         </Button>
       </Form>
     </Modal>

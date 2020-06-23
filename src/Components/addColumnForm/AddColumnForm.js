@@ -56,10 +56,10 @@ const AddColumnForm = () => {
         ></FaTimesCircle>
       </div>
 
-      <p className={styles.head}> Add Task</p>
+      <p className={styles.head}> Add Column</p>
       <Form className={styles.form} onSubmit={(e) => handleSubmit(e)}>
         <FormGroup>
-          <Label className={styles.label}>Title for Task</Label>
+          <Label className={styles.label}>Enter a column name:</Label>
           <Input
             type="text"
             id="column_name"
@@ -75,7 +75,7 @@ const AddColumnForm = () => {
           size="md"
           className={styles.createButton}
         >
-          Add Task
+          Add Column
         </Button>
       </Form>
     </Modal>

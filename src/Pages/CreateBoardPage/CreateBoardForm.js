@@ -72,7 +72,7 @@ const CreateBoardForm = () => {
                 </p>
               </Label>
               <Input
-                type="text-area"
+                type="text"
                 id="team"
                 value={teamMembers}
                 placeholder="NN : Nikhil Nair"
