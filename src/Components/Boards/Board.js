@@ -97,7 +97,7 @@ const Board = () => {
                     className={styles.AddcardTitle}
                     style={{ textAlign: "center" }}
                   >
-                    Add New Column
+                    Add a Column
                   </CardTitle>
                   <div className={styles.icon}>
                     <AiOutlinePlusCircle size={30} color="grey" />
