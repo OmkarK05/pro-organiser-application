@@ -2,7 +2,7 @@ import React, { useReducer } from "react";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import { Route, Switch, Redirect, HashRouter } from "react-router-dom";
+import { Route, Switch, BrowserRouter as Router } from "react-router-dom";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import CreateBoardForm from "./Pages/CreateBoardPage/CreateBoardForm";
@@ -14,9 +14,6 @@ import firebase from "firebase/app";
 import "firebase/database";
 import "firebase/auth";
 import { firebaseConfig } from "./FirebaseConfig/FirebaseConfig";
-import LandingPage from "./Pages/LandingPage/LandingPage";
-import Login from "./Pages/Login/Login";
-import SignUp from "./Pages/SignUp Page/SignUp";
 
 firebase.initializeApp(firebaseConfig);
 
@@ -43,42 +40,26 @@ const initialState = {
 
 const App = () => {
   const [state, dispatch] = useReducer(reducer, initialState);
-  console.log(state.setCardValue);
-  console.log(state.editCard);
-  console.log(state.setCard);
-  console.log(state.setUser);
-
-  // console.log(state.selectedBoardValue);
-
   return (
-    <HashRouter>
+    <Router>
       <OrganiserContext.Provider value={{ state, dispatch }}>
         <ToastContainer />
 
         <Switch>
-          <Route exact path="/" component={LandingPage}></Route>
+          <Route exact path={`/`} component={HomePage} />
+
+          <Route exact path={`/boards`} component={HomePage} />
+
+          <Route exact path="/createBoard" component={CreateBoardForm} />
 
           <Route
-            path="/:email/boards/board/:boardKey/:boardName"
+            exact
+            path="/board/:boardKey/:boardName"
             component={Board}
           ></Route>
-
-          <Route path={`/:email/boards`} component={HomePage} />
-
-          <Route path="/:email/createBoard" component={CreateBoardForm} />
-          {state.setUser ? (
-            <Redirect to={{ pathname: `/${state.setUser.email}/boards` }} />
-          ) : (
-            <Route path="/login" component={Login}></Route>
-          )}
-          {state.setUser ? (
-            <Redirect to={{ pathname: `/boards` }} />
-          ) : (
-            <Route path="/signup" component={SignUp}></Route>
-          )}
         </Switch>
       </OrganiserContext.Provider>
-    </HashRouter>
+    </Router>
   );
 };
 

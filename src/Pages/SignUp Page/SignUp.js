@@ -118,7 +118,7 @@ const SignUp = () => {
                 <Input
                   type="email"
                   name="email"
-                  id="email"
+                  id="emaill"
                   style={{ backgroundColor: "#d1d1d1" }}
                   onChange={formik.handleChange}
                   value={formik.values.email}
@@ -135,7 +135,7 @@ const SignUp = () => {
                 <Input
                   type="text"
                   name="name"
-                  id="name"
+                  id="namee"
                   onChange={formik.handleChange}
                   value={formik.values.name}
                   onBlur={formik.handleBlur}
@@ -152,7 +152,7 @@ const SignUp = () => {
                 <Input
                   type="password"
                   name="password"
-                  id="password"
+                  id="passwordd"
                   onChange={formik.handleChange}
                   value={formik.values.password}
                   onBlur={formik.handleBlur}
@@ -169,7 +169,7 @@ const SignUp = () => {
                 <Input
                   type="password"
                   name="reEnterPassword"
-                  id="reEnterPassword"
+                  id="reEnterPasswordd"
                   style={{ backgroundColor: "#d1d1d1" }}
                   onChange={formik.handleChange}
                   value={formik.values.reEnterPassword}

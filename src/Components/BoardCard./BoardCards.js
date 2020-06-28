@@ -63,7 +63,7 @@ const BoardCards = ({ cards, columnKey }) => {
     firebase
       .database()
       .ref(
-        `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${key}`
+        `/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${key}`
       )
       .remove();
   };

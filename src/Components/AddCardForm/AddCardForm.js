@@ -24,6 +24,27 @@ const AddCardForm = ({ columnKey }) => {
     return membersArray;
   };
 
+  const formatDate = (dueDate) => {
+    let newDate = dueDate.split("-");
+    let months = [
+      "None",
+      "Jan",
+      "Feb",
+      "Mar",
+      "Apr",
+      "May",
+      "Jun",
+      "Jul",
+      "Aug",
+      "Sep",
+      "Oct",
+      "Nov",
+      "Dec",
+    ];
+    let month = months[parseInt(newDate[1])];
+    let formattedDate = `${newDate[2]} ${month} ${newDate[0]}`;
+    return formattedDate;
+  };
   const handleChangeMembers = (selectedOptions) => {
     setSelectedMembers([]);
     setSelectedMembers(selectedOptions);
@@ -45,7 +66,7 @@ const AddCardForm = ({ columnKey }) => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
+    let date = formatDate(dueDate);
     for (let i = 0; i < selectedMembers.length; i++) {
       console.log(selectedMembers[i].value);
       console.log(members);
@@ -69,7 +90,7 @@ const AddCardForm = ({ columnKey }) => {
         firebase
           .database()
           .ref(
-            `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${setCardKey}`
+            `/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${setCardKey}`
           )
           .set({ members }, (error) => {
             if (error) {
@@ -86,9 +107,9 @@ const AddCardForm = ({ columnKey }) => {
         firebase
           .database()
           .ref(
-            `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${setCardKey}`
+            `/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${setCardKey}`
           )
-          .update({ taskTitle, description, dueDate }, (error) => {
+          .update({ taskTitle, description, date }, (error) => {
             if (error) {
               console.log(error);
             } else {
@@ -106,11 +127,11 @@ const AddCardForm = ({ columnKey }) => {
         firebase
           .database()
           .ref(
-            `/users/${state.setUser.uid}/boards/${
+            `/boards/${
               state.selectedBoardKey
             }/columns/${columnKey}/cards/${v4()}`
           )
-          .set({ taskTitle, members, description, dueDate }, (error) => {
+          .set({ taskTitle, members, description, date }, (error) => {
             if (error) {
               console.log(error);
             } else {

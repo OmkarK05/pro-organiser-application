@@ -40,7 +40,7 @@ const ViewCard = ({ columnKey }) => {
         <p className={styles.head}>Task</p>
         <p className={styles.headDueDate}>
           {" "}
-          {setCardValue !== null ? setCardValue.dueDate : null}
+          {setCardValue !== null ? setCardValue.date : null}
         </p>
       </div>
       {setCardValue !== null ? (
@@ -64,7 +64,7 @@ const ViewCard = ({ columnKey }) => {
           </FormGroup>
           <FormGroup>
             <Label className={styles.label}>Due Date</Label>
-            <p>{setCardValue.dueDate}</p>
+            <p>{setCardValue.date}</p>
 
             <p></p>
           </FormGroup>

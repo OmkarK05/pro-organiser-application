@@ -23,11 +23,7 @@ const AddColumnForm = () => {
     e.preventDefault();
     await firebase
       .database()
-      .ref(
-        `/users/${state.setUser.uid}/boards/${
-          state.selectedBoardKey
-        }/columns/${v4()}/`
-      )
+      .ref(`/boards/${state.selectedBoardKey}/columns/${v4()}/`)
       .set({ taskTitle }, function (error) {
         if (error) {
           console.log(error);

@@ -29,7 +29,7 @@ const EditDeleteIcons = ({ cardKey, columnKey, cardValue }) => {
     firebase
       .database()
       .ref(
-        `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${cardKey}`
+        `/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${cardKey}`
       )
       .remove();
 

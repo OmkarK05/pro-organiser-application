@@ -14,9 +14,7 @@ const Columns = ({ columnKey, value }) => {
   const deleteColumn = () => {
     firebase
       .database()
-      .ref(
-        `/users/${state.setUser.uid}/boards/${selectedBoardKey}/columns/${columnKey}`
-      )
+      .ref(`/boards/${selectedBoardKey}/columns/${columnKey}`)
       .remove();
   };
 
@@ -35,14 +33,14 @@ const Columns = ({ columnKey, value }) => {
       firebase
         .database()
         .ref(
-          `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${dragggedColumnKey}/cards/${id}`
+          `/boards/${state.selectedBoardKey}/columns/${dragggedColumnKey}/cards/${id}`
         )
         .remove();
 
       firebase
         .database()
         .ref(
-          `/users/${state.setUser.uid}/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${id}`
+          `/boards/${state.selectedBoardKey}/columns/${columnKey}/cards/${id}`
         )
         .set(draggesCardData);
     }
